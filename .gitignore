@@ -23,6 +23,27 @@ node_modules
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+# WebStorm
+.idea/
+*.iml
+
+# Other popular IDEs
+# IntelliJ
+*.iws
+*.ipr
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
 # misc
 /.sass-cache
