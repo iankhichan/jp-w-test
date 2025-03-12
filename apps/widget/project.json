@@ -13,6 +13,24 @@
         "cwd": "apps/widget",
         "forwardAllArgs": false
       }
+    },
+    "stylelint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "stylelint 'apps/widget/**/*.{css,scss}'"
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "tsc -p tsconfig.app.json --noEmit",
+          "nx affected:lint",
+          "stylelint 'apps/widget/**/*.{css,scss}'"
+        ],
+        "cwd": "apps/widget",
+        "forwardAllArgs": false
+      }
     }
   }
 }
