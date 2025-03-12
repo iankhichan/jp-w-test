@@ -2,6 +2,10 @@
   "name": "@brainrocket/source",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "pnpm": ">=10.2.1 <11",
+    "node": "22.14.0" 
+  },
   "scripts": {
     "prepare": "husky"
   },
