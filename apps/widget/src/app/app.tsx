@@ -1,11 +1,9 @@
-import NxWelcome from './nx-welcome';
+import { JackpotWidget } from './jackpot-widget';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="widget" />
+      <JackpotWidget />
     </div>
   );
 }
-
-export default App;
