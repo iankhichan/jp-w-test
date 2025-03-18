@@ -4,13 +4,14 @@
   "license": "MIT",
   "engines": {
     "pnpm": ">=10.2.1 <11",
-    "node": "22.14.0" 
+    "node": "22.14.0"
   },
   "scripts": {
     "prepare": "husky"
   },
   "private": true,
   "dependencies": {
+    "@nx/express": "^20.6.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
