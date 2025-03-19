@@ -1,3 +1,6 @@
+/* TODO:
+ - need to work on animation ux.
+ */
 import { useState, useEffect } from 'react';
 import { AnimatedNumber } from './animated-number';
 
