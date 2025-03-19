@@ -60,7 +60,7 @@ server.listen(PORT, () => {
     const tickers = ['AAPL', 'GOOG', 'MSFT'];
     const randomTicker = tickers[Math.floor(Math.random() * tickers.length)];
     const tickerData = {
-      value: 40_979_990_197 + Math.random() * 10,
+      value: 40_979_990_197 + Math.random() * 1,
       timestamp: Date.now(),
     };
     broadcastTickerData(randomTicker, tickerData);
