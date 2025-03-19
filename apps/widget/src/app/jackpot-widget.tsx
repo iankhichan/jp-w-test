@@ -1,4 +1,5 @@
 import React from 'react';
+import { TickerDisplay } from './ticker-display';
 
 export const JackpotWidget: React.FC = () => {
   return (
@@ -12,10 +13,11 @@ export const JackpotWidget: React.FC = () => {
           />
         </div>
 
-        <div>
+        {/* <div>
           <p className="text-sm font-medium">Mega Jackpot</p>
           <p className="text-lg font-bold">Ft 40.979.990.197,99</p>
-        </div>
+        </div> */}
+        <TickerDisplay />
       </div>
 
       <button className="flex items-center gap-1 bg-purple-300 hover:bg-purple-400 text-xs font-semibold text-purple-900 px-4 py-2 rounded-md transition">
