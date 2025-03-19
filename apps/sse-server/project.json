@@ -1,0 +1,26 @@
+{
+  "name": "sse-server",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/sse-server/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "sse-server:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "sse-server:build:development"
+        },
+        "production": {
+          "buildTarget": "sse-server:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
