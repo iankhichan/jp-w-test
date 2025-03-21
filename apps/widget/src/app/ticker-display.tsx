@@ -63,27 +63,9 @@ export const TickerDisplay = ({ variant }: { variant: 'no-style' }) => {
       }
     };
   }, []);
-  // useEffect(() => {
-  //   const socket = new WebSocket('ws://localhost:3000');
 
-  //   socket.addEventListener('open', () => {
-  //     console.log('Connected to WebSocket server!');
-  //   });
-
-  //   socket.addEventListener('message', (event) => {
-  //     console.log('msg recieved', event);
-  //     const data = JSON.parse(event.data);
-
-  //     setTickerData(data);
-  //   });
-
-  //   // Cleanup function to close the connection when the component unmounts
-  //   return () => {
-  //     socket.close();
-  //   };
-  // }, []);
-
-  // //   useEffect(() => {
+  /* ================= SSE implementation =================== */
+  //   useEffect(() => {
 
   //     const eventSource = new EventSource('http://localhost:3000/events');
 
@@ -95,7 +77,7 @@ export const TickerDisplay = ({ variant }: { variant: 'no-style' }) => {
   //       try {
   //         const data = JSON.parse(event.data);
 
-  //         // Check if it's the initial connection message
+  // Check if it's the initial connection message
   //         if (data.connection) {
   //           console.log('SSE Connection established');
   //           return;
@@ -113,11 +95,12 @@ export const TickerDisplay = ({ variant }: { variant: 'no-style' }) => {
   //       eventSource.close();
   //     };
 
-  //     // Cleanup on component unmount
+  // Cleanup on component unmount
   //     return () => {
   //       eventSource.close();
   //     };
   //   }, []);
+
   if (variant === 'no-style') {
     return <AnimatedNumber value={tickerData['AAPL'].value} />;
   }
@@ -166,7 +149,6 @@ export const TickerDisplay = ({ variant }: { variant: 'no-style' }) => {
             </div>
             <div className="px-4 py-5 sm:p-6">
               <div className="text-4xl font-bold text-indigo-600">
-                {/* <AnimatedNumber value={tickerData.ticker2Value} /> */}
                 <AnimatedNumber value={tickerData['GOOG'].value} />
               </div>
             </div>
