@@ -14,14 +14,16 @@ export const JackpotWidget: React.FC = () => {
           />
         </div>
 
-        {/* <div>
+        <div>
           <p className="text-sm font-medium">Mega Jackpot</p>
-          <p className="text-lg font-bold">Ft 40.979.990.197,99</p>
-        </div> */}
+          <div className="text-lg font-bold flex">
+            Ft &nbsp;
+            <TickerDisplay variant="no-style" />
+          </div>
+        </div>
       </div>
 
-      <TickerDisplay />
-      <Bubbles />
+      {/* <Bubbles /> */}
       <button className="flex items-center gap-1 bg-purple-300 hover:bg-purple-400 text-xs font-semibold text-purple-900 px-4 py-2 rounded-md transition">
         OPT IN
         <span className="text-purple-900">&#9662;</span>

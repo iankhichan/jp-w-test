@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import { AnimatedNumber } from './animated-number';
 
-export const TickerDisplay = () => {
+export const TickerDisplay = ({ variant }: { variant: 'no-style' }) => {
   const [tickerData, setTickerData] = useState({
     AAPL: { value: 0, timestamp: Date.now() },
     GOOG: { value: 0, timestamp: Date.now() },
@@ -118,9 +118,12 @@ export const TickerDisplay = () => {
   //       eventSource.close();
   //     };
   //   }, []);
+  if (variant === 'no-style') {
+    return <AnimatedNumber value={tickerData['AAPL'].value} />;
+  }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-xl mx-auto">
         {/* Connection Status */}
         <div className="mb-8 flex items-center justify-between">
