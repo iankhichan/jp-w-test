@@ -1,6 +1,6 @@
 import React from 'react';
 import { TickerDisplay } from './ticker-display';
-import { Bubbles } from './animation/anim.wrapper';
+// import { Bubbles } from './animation/anim.wrapper';
 
 export const ExpandedBanner: React.FC = () => {
   return (

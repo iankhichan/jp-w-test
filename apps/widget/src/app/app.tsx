@@ -1,4 +1,4 @@
-import { ExpandedBanner } from './jackpot-widget';
+// import { ExpandedBanner } from './jackpot-widget';
 import { DraggableStickyWidget } from './sticky-widget';
 import JPIcon from '../assets/jp.svg?react';
 
