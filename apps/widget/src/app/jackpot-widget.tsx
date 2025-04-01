@@ -2,7 +2,7 @@ import React from 'react';
 import { TickerDisplay } from './ticker-display';
 import { Bubbles } from './animation/anim.wrapper';
 
-export const JackpotWidget: React.FC = () => {
+export const ExpandedBanner: React.FC = () => {
   return (
     <header className="bg-purple-500 text-white px-4 py-2 flex items-center justify-between rounded-lg shadow-lg">
       <div className="flex items-center gap-3">
