@@ -26,7 +26,7 @@
         "commands": [
           "tsc -p tsconfig.app.json --noEmit",
           "nx affected:lint",
-          "stylelint 'apps/widget/**/*.{css,scss}'"
+          "stylelint '**/*.{css,scss}'"
         ],
         "cwd": "apps/widget",
         "forwardAllArgs": false
